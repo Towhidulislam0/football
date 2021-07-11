@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick the foot ball</title>
+    <style>
+        .foot {
+            height: 500px;
+            transition: transform 0.2s ease-in;
+        }
+
+        .football {
+            width: 235px;
+            margin-left: 130px;
+            margin-bottom: -60px;
+            transition: transform 0.2s ease-out 0.22s;
+        }
+
+        .ground:hover .football {
+            transform: translate(900px, -300px);
+        }
+
+        .ground {
+            border: 1px solid black;
+            border-radius: 30px;
+            background-color: rgb(17, 82, 17);
+            box-shadow: 1px 1px 50px rgb(1, 58, 1);
+        }
+
+        .ground:hover .foot {
+            transform: rotate(-50deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ground">
+        <img class="foot" src="image/foot.png" alt="">
+        <img class="football" src="image/football.svg" alt="">
+    </div>
+
+</body>
+
+</html>
